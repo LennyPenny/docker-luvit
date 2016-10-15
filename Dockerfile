@@ -22,7 +22,7 @@ USER luvit
 # Pull Luvit
 #
 
-WORKDIR /tmp
+WORKDIR ~
 RUN curl -L# https://github.com/luvit/luvit/archive/$VERSION.tar.gz | tar xz
 RUN cd luvit-$VERSION && make && make install
 RUN rm -fr luvit-$VERSION.tar.gz
