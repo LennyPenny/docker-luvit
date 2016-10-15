@@ -31,5 +31,5 @@ RUN rm -fr luvit-$VERSION.tar.gz
 # Entry
 #
 
-WORKDIR /
+WORKDIR ~
 CMD ["luvit"]
