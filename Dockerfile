@@ -3,21 +3,20 @@
 # Luvit v2.9.1
 #
 
-FROM ubuntu:14.04
-MAINTAINER Marcus André <hello@marcusandre.de>
+FROM alpine:latest
+MAINTAINER Lennart Bernhardt <l.bernhardt@live.de
 
 #
 # Pkg
 #
 
-ENV VERSION 2.9.1
+ENV VERSION 2.11.5
 
 #
 # System
 #
 
-RUN apt-get update -qq
-RUN apt-get install -qqy --force-yes build-essential curl
+USER luvit
 
 #
 # Pull Luvit
